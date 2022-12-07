@@ -5,12 +5,12 @@ const Profile = () => {
   // const projects = {
   //   
   return (
-    <section id="Profile">
+    <section id="profile">
       <div className="row">
         <div className="twelve columns collapsed">
           <h2 style={{ color: "white", textAlign: "center", marginBottom: '8%' }}>My Projects:</h2>
           <div
-            id="Profile-wrapper"
+            id="profile-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
           >
             <Project />

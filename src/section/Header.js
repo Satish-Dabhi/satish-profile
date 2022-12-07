@@ -7,7 +7,7 @@ const Header = () => {
     <header id="home"
       className="top-header"
     >
-      <nav id="nav-wrap">
+      {/* <nav id="nav-wrap">
         <ul id="nav">
           <li className="current">
             <Link to="home" spy={true} smooth={true} offset={50} duration={900} >Home</Link>
@@ -29,7 +29,36 @@ const Header = () => {
           </li>
         </ul>
 
+      </nav> */}
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-wrap">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="nav">
+            <li className="current">
+              <Link to="home" spy={true} smooth={true} offset={50} duration={900} >Home</Link>
+            </li>
+            <li>
+              <Link to="about" spy={true} smooth={true} offset={50} duration={900}>About</Link>
+            </li>
+            <li>
+              <Link to="contactinfo" spy={true} smooth={true} offset={50} duration={900}>Contact</Link>
+            </li>
+            <li>
+              <Link to="profile" spy={true} smooth={true} offset={50} duration={900}>profile</Link>
+            </li>
+            <li>
+              <Link to="resume" spy={true} smooth={true} offset={50} duration={900}>Education</Link>
+            </li>
+            <li>
+              <Link to="skills" spy={true} smooth={true} offset={50} duration={900}>Skills</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
+
+
+
       <div className="row banner" >
         <div className="banner-text">
           <Fade bottom>

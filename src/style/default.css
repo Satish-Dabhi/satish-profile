@@ -752,6 +752,9 @@ properly.
   .row .offset-11 {
     margin-left: 0%;
   }
+  #profile .row .columns {
+  width: 100%!important;
+}
 }
 
 /* mobile narrow

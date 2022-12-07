@@ -102,6 +102,6 @@ export const project = [
         "year": "2022",
         "technologies": "React.js, Material UI, react-jsonschema-form, node.js, MongoDB",
         "tools": "VS Studio Code, Chrome, Mongo Shell",
-        "description": "In this App Admin can Manage all Employees and Department from Admin Panel, also Manager Update daily Attendance through this App.Employee check their profile with only read-only mode."
+        "description": "Admin can Manage all Employees and Department,Employee check their profile with only read-only mode."
     },
 ]
