@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/satish-profile/static/css/main.9c02665c.css",
-    "main.js": "/satish-profile/static/js/main.5dcbf42a.js",
+    "main.css": "/satish-profile/static/css/main.5bd82682.css",
+    "main.js": "/satish-profile/static/js/main.816e56b3.js",
     "static/media/tree.jpg": "/satish-profile/static/media/tree.8ec130e5150dd03909d0.jpg",
     "static/media/p4.png": "/satish-profile/static/media/p4.3dbf82199b6dd661c82e.png",
     "static/media/p1.png": "/satish-profile/static/media/p1.0106301598e734587e05.png",
@@ -9,11 +9,11 @@
     "static/media/p2.png": "/satish-profile/static/media/p2.06344d017090b847de87.png",
     "static/media/profile.jpg": "/satish-profile/static/media/profile.3057bd3e3a55e98147d3.jpg",
     "index.html": "/satish-profile/index.html",
-    "main.9c02665c.css.map": "/satish-profile/static/css/main.9c02665c.css.map",
-    "main.5dcbf42a.js.map": "/satish-profile/static/js/main.5dcbf42a.js.map"
+    "main.5bd82682.css.map": "/satish-profile/static/css/main.5bd82682.css.map",
+    "main.816e56b3.js.map": "/satish-profile/static/js/main.816e56b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c02665c.css",
-    "static/js/main.5dcbf42a.js"
+    "static/css/main.5bd82682.css",
+    "static/js/main.816e56b3.js"
   ]
 }
