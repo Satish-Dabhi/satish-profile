@@ -1,0 +1,805 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  border-radius: 10px;
+  background-color: transparent;
+  width: 200px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #302f2f;
+  background-color: black;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  min-width: 210px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #302f2f;
+  background-color: #bbb;
+  border-radius: 10px;
+  color: black;
+  transform: rotateY(180deg);
+}
+.flip-card-back p {
+  z-index: 1;
+}
+
+.flip-card-front h4 {
+  text-align: center;
+  font: 20px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: rgba(177, 108, 131, 0.8);
+}
+
+.flip-card-front ul li {
+  /* writing-mode: vertical-lr; */
+  text-orientation: sideways;
+  font-weight: lighter;
+  word-spacing: 5px;
+  z-index: 99;
+
+  text-align: left;
+  font: 10px "opensans-bold", sans-serif;
+  width: 100%;
+  margin: 0;
+  letter-spacing: 2.5px;
+  color: #bbb;
+}
+
+.flip-card-back a {
+  margin: 20px;
+  font: 14px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: rgba(177, 108, 131, 0.8);
+}
+.flip-card-back p {
+  margin: 20px;
+}
+
+body {
+  background: #0f0f0f;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* vertically center banner section */
+header:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+header .banner-text {
+  width: 100%;
+}
+
+header .banner-text .responsive-headline {
+  font-family: cursive;
+  color: transparent;
+}
+
+header .banner-text h1 {
+  font: 90px/1.1em "opensans-bold", sans-serif;
+  color: rgb(224, 223, 223);
+  border-radius: 30px;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(114, 114, 114);
+}
+header .banner-text h3 {
+  /* font: 20px/1.1em 'opensans-bold', sans-serif; */
+
+  font: 27px/1.5em "librebaskerville-heavy", serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(108 177 149 / 80%);
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 70%;
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+  color: rgb(255, 255, 255);
+}
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+
+/* header social links */
+header .social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+}
+header .social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+header .social li a {
+  color: #fff;
+}
+header .social li a:hover {
+  color: #0762f9;
+}
+
+/* scrolldown link */
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .scrolldown a:hover {
+  color: #0762f9;
+}
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+  /* z-index: 1; */
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  /* z-index: 999; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(33, 33, 33, 0.4);
+}
+
+.opaque {
+  background-color: #333;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  /* position: relative; */
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+ul#nav li a:hover {
+  color: #28fe65;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+ul#nav li a.active {
+  color: #fe6928;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+  background: #000524;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+#about a,
+#about a:visited {
+  color: #fff;
+}
+#about a:hover,
+#about a:focus {
+  color: #0762f9;
+}
+
+#about h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#about p {
+  line-height: 30px;
+  color: #ccc;
+}
+#about .profile-pic {
+  position: relative;
+  width: 155px;
+  height: 155px;
+  border-radius: 100%;
+}
+#about .contact-details {
+  width: 41.66667%;
+}
+#about .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#about .main-col {
+  padding-right: 5%;
+}
+#about .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+#contactinfo {
+  background-color: rgb(36, 35, 35) !important;
+  padding-top: 100px !important;
+  padding-bottom: 200px !important;
+  overflow: hidden !important;
+  float: none !important;
+}
+#contactinfo h2 {
+  font: 22px, "opensans-bold", sans-serif !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.5px !important;
+
+  font: 22px/30px "opensans-bold", sans-serif !important;
+  color: #fff !important;
+  margin-bottom: 12px !important;
+}
+#contactinfo a,
+footer a:visited {
+  color: rgba(177, 108, 131, 0.8);
+}
+#contactinfo a:hover,
+footer a:focus {
+  color: #fff;
+}
+
+#contactinfo .mikeySocial {
+  margin: 18px 0 30px 0 !important;
+  padding: 0;
+  font-size: 100px !important;
+}
+#contactinfo .mikeySocial li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #f06000;
+}
+
+#contactinfo .mikeySocial li:first-child {
+  margin-left: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Resume Section
+/* ------------------------------------------------------------------ */
+
+#resume {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+#resume p {
+  color: #0d0d0d;
+}
+#resume p.info {
+  color: #0d0d0d;
+}
+
+#resume a:visited {
+  color: rgba(177, 108, 131, 0.8);
+}
+#resume a:hover,
+#resume a:focus {
+  color: #313131;
+}
+#resume a {
+  font: 15px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: rgba(177, 108, 131, 0.8);
+}
+
+#resume h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#resume h1 span {
+  border-bottom: 3px solid #0762f9;
+  padding-bottom: 6px;
+}
+#resume h3 {
+  color: #97546a;
+  font: 25px/30px "opensans-bold", sans-serif;
+}
+
+#resume .header-col {
+  padding-top: 9px;
+}
+#resume .main-col {
+  padding-right: 10%;
+}
+
+.CommonListItem,
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#resume .info {
+  font: 16px/24px "librebaskerville-italic", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#resume .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#resume .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
+}
+
+/*----------------------------------------------*/
+/*	Skills Component
+/*----------------------------------------------*/
+
+#skills {
+  background-color: #e4e4e4 !important;
+  padding-top: 90px !important;
+  padding-bottom: 72px !important;
+  overflow: hidden !important;
+}
+
+#skills p {
+  color: #0d0d0d !important;
+}
+
+#skills h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#skills h1 span {
+  border-bottom: 3px solid #0762f9;
+  padding-bottom: 6px;
+}
+#skills h3 {
+  font: 25px/30px "opensans-bold", sans-serif;
+}
+
+#skills .header-col {
+  padding-top: 9px;
+}
+#skills .main-col {
+  padding-right: 10%;
+}
+
+#skills .info {
+  font: 16px/24px "librebaskerville-italic", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+
+.bars {
+  width: 95%;
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+.bars .skills {
+  margin-top: 36px;
+  list-style: none;
+}
+.bars li {
+  position: relative;
+  margin-bottom: 60px;
+  background: #333;
+  height: 42px;
+  border-radius: 0px;
+}
+.bars li em {
+  font: 15px "opensans-bold", sans-serif;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  top: -36px;
+}
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  margin: 0;
+  padding-right: 24px;
+  background: #313131;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 0px;
+}
+/* ------------------------------------------------------------------ */
+/* e. profile Section
+/* ------------------------------------------------------------------ */
+
+#profile {
+  background: #1d1d1d;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+#profile p {
+  text-align: left !important;
+}
+#profile h6 {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#profile h2 {
+  font: 22px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+#profile h1 {
+  font: 15px/24px "opensans-semibold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #1d1d1d;
+}
+#profile h3 {
+  font: 10px "opensans-semibold" !important;
+  letter-spacing: 1px !important;
+  text-align: center;
+  color: #1d1d1d;
+  padding: 0px !important;
+  margin-left: 0px !important;
+}
+
+/* profile Content */
+#profile-wrapper .columns {
+  margin-bottom: 36px;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content .popup-modal {
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+/* content fadein */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
+  opacity: 1;
+}
+/* content fadeout */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
+  opacity: 0;
+}
+
+/* Reset */
+.flexslider a:active,
+.flexslider a:focus {
+  outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slides li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Necessary Styles */
+.flexslider {
+  position: relative;
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides > li {
+  position: relative;
+}
+
+.flex-container {
+  zoom: 1;
+  position: relative;
+}
+
+.slides:before,
+.slides:after {
+  content: " ";
+  display: table;
+}
+.slides:after {
+  clear: both;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* Slider Styles */
+.slides {
+  zoom: 1;
+}
+.slides > li {
+  /*margin-right: 5px; */
+  overflow: hidden;
+}
+
+/* Control Nav */
+.flex-control-nav {
+  width: 100%;
+  bottom: -20px;
+  text-align: left;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background: #ddd;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3);
+}
+.flex-control-paging li a:hover {
+  background: #ccc;
+  background: rgba(255, 255, 255, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: default;
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+#footer {
+  background-color: rgb(36, 35, 35);
+  padding-bottom: 70px;
+}
+footer {
+  padding-top: 48px;
+  color: #303030;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+footer a,
+footer a:visited {
+  color: rgba(177, 108, 131, 0.8);
+}
+footer a:hover,
+footer a:focus {
+  color: #fff;
+}
+
+footer .mikeySocial {
+  margin: 18px 0 30px 0;
+  padding: 0;
+  font-size: 100px;
+}
+footer .mikeySocial li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #f06000;
+}
+
+footer .mikeySocial li:first-child {
+  margin-left: 0;
+}
+
+/* Go To Top Button */
+#go-top {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -30px;
+}
+#go-top a {
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #525252;
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  color: #fff;
+  font-size: 21px;
+  line-height: 60px;
+  border-radius: 100%;
+}
+#go-top a:hover {
+  background-color: #0f9095;
+}
+
+.social .btn:first-child {
+  margin-right: 30px;
+}
+.social .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.social .btn i {
+  margin-right: 15px;
+}
+.project-btn {
+  background-color: #1abc9c !important;
+}
+.github-btn {
+  background-color: #34495e !important;
+}
+
+.top-header {
+  background: url("../images/tree.jpg");
+  height: "600px";
+  background-size: cover;
+  opacity: "0.99";
+  z-index: 9999;
+}
+
+.social-icons {
+  margin-top: 40px;
+}
+
+ul.qualifications li {
+  list-style: square;
+}
