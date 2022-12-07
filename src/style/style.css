@@ -78,6 +78,7 @@
   margin: 0;
   letter-spacing: 2.5px;
   color: #bbb;
+  list-style: circle;
 }
 
 .flip-card-back a {
@@ -318,6 +319,7 @@ ul#nav li a.active {
   width: 155px;
   height: 155px;
   border-radius: 100%;
+  border: 2px solid white;
 }
 #about .contact-details {
   width: 41.66667%;
@@ -344,8 +346,8 @@ ul#nav li a.active {
 
 #contactinfo {
   background-color: rgb(36, 35, 35) !important;
-  padding-top: 100px !important;
-  padding-bottom: 200px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
   overflow: hidden !important;
   float: none !important;
 }
@@ -573,7 +575,7 @@ footer a:focus {
   color: #1d1d1d;
 }
 #profile h3 {
-  font: 10px "opensans-semibold" !important;
+  font: 15px "opensans-semibold" !important;
   letter-spacing: 1px !important;
   text-align: center;
   color: #1d1d1d;
@@ -735,6 +737,8 @@ footer .mikeySocial li {
   margin: 0;
   padding: 0;
   color: #f06000;
+
+  padding: 20px !important;
 }
 
 footer .mikeySocial li:first-child {
@@ -802,4 +806,8 @@ footer .mikeySocial li:first-child {
 
 ul.qualifications li {
   list-style: square;
+}
+
+#contactinfo .address .contact-icon {
+  margin-right: 8px;
 }

@@ -15,6 +15,7 @@
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,7 +28,6 @@ body {
   color: #838c95;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -753,8 +753,8 @@ properly.
     margin-left: 0%;
   }
   #profile .row .columns {
-  width: 100%!important;
-}
+    width: 100% !important;
+  }
 }
 
 /* mobile narrow
@@ -762,6 +762,13 @@ properly.
 @media only screen and (max-width: 460px) {
   .row {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .col-xs-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 

@@ -23,7 +23,7 @@ const Project = () => {
                                     "opacity": "50%"
                                 }} alt="{project.name}" src={require("../images/p" + (index + 1) + ".png")} />
                                 <div style={{ width: "100%" }} class="columns">
-                                    <h3 style={{ "color": "#bbb", "marginTop": "15%" }}>Technologies:</h3>
+                                    <h3 style={{ "color": "#bbb", "marginTop": "9%" }}>Technologies:</h3>
                                     <ul>{project.technologies.length > 0 && project.technologies.split(",").map((item) => {
                                         return <li>{item}</li>
                                     })}</ul>

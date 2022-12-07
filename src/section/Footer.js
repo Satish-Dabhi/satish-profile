@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section id="footer">
       <footer >
-        <div className="row">
+        <div className="row" style={{ "display": "block" }} >
           <Fade bottom>
             <div className="twelve columns">
               <ul className="mikeySocial row">
