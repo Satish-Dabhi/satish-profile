@@ -19,13 +19,13 @@ const Header = () => {
             <Link to="contactinfo" spy={true} smooth={true} offset={50} duration={900}>Contact</Link>
           </li>
           <li>
-            <Link to="profile" spy={true} smooth={true} offset={50} duration={900}>profile</Link>
-          </li>
-          <li>
             <Link to="resume" spy={true} smooth={true} offset={50} duration={900}>Education</Link>
           </li>
           <li>
             <Link to="skills" spy={true} smooth={true} offset={50} duration={900}>Skills</Link>
+          </li>
+          <li>
+            <Link to="profile" spy={true} smooth={true} offset={50} duration={900}>projects</Link>
           </li>
         </ul>
 

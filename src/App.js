@@ -4,7 +4,7 @@ import Header from "./section/Header";
 import './style/style.css';
 import './style/default.css';
 import Contact from "./section/Contact";
-import Profile from "./section/Profile";
+import Projects from "./section/Projects";
 import Resume from "./section/Resume";
 import Skills from './section/Skills';
 import Footer from './section/Footer';
@@ -15,9 +15,9 @@ const App = () => {
       <Header />
       <About />
       <Contact />
-      <Profile />
       <Resume />
       <Skills />
+      <Projects />
       <Footer />
     </div>
   );

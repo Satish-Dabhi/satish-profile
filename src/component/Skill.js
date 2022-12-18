@@ -6,7 +6,6 @@ const Skill = ({ list }) => {
         return color;
     }
     return list.length > 0 && list.map((skills) => {
-        console.log("skilllll", skills);
         const backgroundColor = getRandomColor();
         const className = "bar-expand " + skills.name;
         const width = skills.level;

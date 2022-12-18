@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../component/Project";
 
-const Profile = () => {
+const Projects = () => {
   // const projects = {
   //   
   return (
@@ -21,5 +21,5 @@ const Profile = () => {
   );
 }
 
-export default Profile;
+export default Projects;
 
