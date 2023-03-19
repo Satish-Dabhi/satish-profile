@@ -6,7 +6,7 @@ export const education = [
         "description": "Learned Full Stack Web Development by studying, writing, and troubleshooting code. Completed 2 projects and learned how to effectively coordinate my coding remotely with others through the use of Git Repo's. As a student, I learned how to code both the front-end and back-end of web applications."
     },
     {
-        "name": "Shree K. C. Kothari Sec. & Higher Sec. School, Surat - (Class XII)",
+        "name": "Shree K. C. Kothari Sec. & Higher test. School, Surat - (Class XII)",
         "year": "2018",
         "percentage": "Aggregate: 70.00% "
     },
