@@ -38,7 +38,7 @@ const Header = () => {
             <h1 className="responsive-headline">{process.env.REACT_APP_NAME}</h1>
           </Fade>
           <Fade bottom duration={1800}>
-            <h3>
+            <h2>
               <Typewriter
                 options={{
                   strings: ['Web Developer', 'MERN Stack Web Developer'],
@@ -46,7 +46,7 @@ const Header = () => {
                   loop: true,
                 }}
               />
-            </h3>
+            </h2>
           </Fade>
         </div>
       </div>

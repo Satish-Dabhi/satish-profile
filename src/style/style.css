@@ -132,27 +132,12 @@ header .banner-text {
 
 header .banner-text .responsive-headline {
   font-family: cursive;
-  color: transparent;
+  color: #fff;
+  font-size: 6rem;
 }
 
-header .banner-text h1 {
-  font: 90px/1.1em "opensans-bold", sans-serif;
-  color: rgb(224, 223, 223);
-  border-radius: 30px;
-  letter-spacing: -2px;
-  margin: 0 auto 18px auto;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgb(114, 114, 114);
-}
-header .banner-text h3 {
-  /* font: 20px/1.1em 'opensans-bold', sans-serif; */
-
-  font: 27px/1.5em "librebaskerville-heavy", serif;
-  color: rgb(0, 0, 0);
-  background-color: rgb(108 177 149 / 80%);
-  border-radius: 50px;
-  margin: 0 auto;
-  width: 70%;
+header .banner-text h2 {
+  color: #fff;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
