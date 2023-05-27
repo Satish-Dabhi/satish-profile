@@ -1,6 +1,8 @@
 import React from "react";
 import Fade from "react-reveal";
 import { Link } from "react-scroll";
+import Typewriter from 'typewriter-effect';
+
 
 const Header = () => {
   return (
@@ -36,7 +38,15 @@ const Header = () => {
             <h1 className="responsive-headline">{process.env.REACT_APP_NAME}</h1>
           </Fade>
           <Fade bottom duration={1800}>
-            <h3>{process.env.REACT_APP_TITLE}</h3>
+            <h3>
+              <Typewriter
+                options={{
+                  strings: ['Web Developer', 'MERN Stack Web Developer'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h3>
           </Fade>
         </div>
       </div>

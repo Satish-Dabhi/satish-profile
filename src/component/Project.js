@@ -32,13 +32,18 @@ const Project = () => {
                             <div class="flip-card-back">
                                 <h3 style={{ font: "12px" }}>{project.name}</h3>
                                 <div style={{ backgroundColor: "black" }} >
-                                    <a href="{projects.deployedSite}">Tools:</a>
+                                    <a href="#">Tools:</a>
                                 </div>
                                 <h3>{project.tools}</h3>
                                 <div style={{ backgroundColor: "black" }} >
-                                    <a href="{projects.gitHubRepo}" >Project Description:</a>
+                                    <a href="#" >Project Description:</a>
                                 </div>
                                 <p >{project.description}</p>
+                                {project.viewUrl &&
+                                    <div style={{ backgroundColor: "black" }} >
+                                        <a href={project.viewUrl} >Click To View :</a>
+                                    </div>}
+
                             </div>
                         </div>
                     </div>

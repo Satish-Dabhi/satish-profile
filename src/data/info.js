@@ -43,11 +43,11 @@ export const bio = {
 export const skills = [
     {
         "name": "REACT",
-        "level": "80%"
+        "level": "85%"
     },
     {
         "name": "NODE.JS",
-        "level": "70%"
+        "level": "75%"
     },
     {
         "name": "MONGODB",
@@ -66,6 +66,14 @@ export const skills = [
         "level": "90%"
     },
     {
+        "name": "JAVA",
+        "level": "70%"
+    },
+    {
+        "name": "Liferay",
+        "level": "70%"
+    },
+    {
         "name": "MYSQL",
         "level": "65%"
     },
@@ -76,12 +84,22 @@ export const skills = [
 ];
 
 export const project = [
+
     {
-        "name": "Online Voting System",
+        "name": "Employee Management App",
+        "year": "2022",
+        "technologies": "React.js, Material UI, react-jsonschema-form, node.js, MongoDB",
+        "tools": "VS Studio Code, Chrome, Mongo Shell",
+        "description": "Admin can Manage all Employees and Department,Employee check their profile with only read-only mode.",
+        "viewUrl": "https://github.com/Satish-Dabhi/employee-management-front-end"
+    },
+    {
+        "name": "Flip Card Memory Game",
         "year": "2021",
-        "technologies": "HTML,CSS,PHP,MYSQL",
-        "tools": "VS Studio, Xampp, phpmyadmin, mysql, Chrome",
-        "description": "Authenticated people can vote for their favorite candidates."
+        "technologies": "React.js, Material UI",
+        "tools": "VS Studio Code, Chrome",
+        "description": "Player Remember all cards positions after game start  if all matching pairs are selected by Player then Player Wins the game.",
+        "viewUrl": "https://satish-dabhi.github.io/memory-card-game/"
     },
     {
         "name": "Tic Tac Toe Game",
@@ -91,17 +109,10 @@ export const project = [
         "description": "Player1 and Player2 play with each other and one wins the game."
     },
     {
-        "name": "Flip Card Memory Game",
+        "name": "Online Voting System",
         "year": "2021",
-        "technologies": "React.js, Material UI",
-        "tools": "VS Studio Code, Chrome",
-        "description": "Player Remember all cards positions after game start  if all matching pairs are selected by Player then Player Wins the game."
-    },
-    {
-        "name": "Employee Management App",
-        "year": "2022",
-        "technologies": "React.js, Material UI, react-jsonschema-form, node.js, MongoDB",
-        "tools": "VS Studio Code, Chrome, Mongo Shell",
-        "description": "Admin can Manage all Employees and Department,Employee check their profile with only read-only mode."
+        "technologies": "HTML,CSS,PHP,MYSQL",
+        "tools": "VS Studio, Xampp, phpmyadmin, mysql, Chrome",
+        "description": "Authenticated people can vote for their favorite candidates."
     },
 ]
