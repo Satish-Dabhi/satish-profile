@@ -2,8 +2,7 @@ import React from "react";
 import Project from "../component/Project";
 
 const Projects = () => {
-  // const projects = {
-  //   
+   
   return (
     <section id="profile">
       <div className="row">

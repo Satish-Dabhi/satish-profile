@@ -84,7 +84,14 @@ export const skills = [
 ];
 
 export const project = [
-
+    {
+        "name": "Recipe Guru App",
+        "year": "2023",
+        "technologies": "React-Vite, Material UI, node.js, Express.js, MongoDB, Redux Toolkit, Google Auth",
+        "tools": "VS Studio Code, Chrome, Mongo Shell",
+        "description": "Recipe Guru is a unique website for food lovers who want to discover new recipes and easily manage their cooking ideas.",
+        "viewUrl": "https://recipe-app-eight-dusky.vercel.app"
+    },
     {
         "name": "Employee Management App",
         "year": "2022",
