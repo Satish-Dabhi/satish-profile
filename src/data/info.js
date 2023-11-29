@@ -21,8 +21,8 @@ export const work = [
     {
         "name": "Surekha Technologies Pvt Ltd. Ahmedabad, Gujarat",
         "year": "JAN 2022 - PRESENT",
-        "percentage": "— Junior Software Engineer",
-        "description": "I Joined as a Junior Software Engineer. I am working as a React.js Developer."
+        "percentage": "— Senior Software Engineer",
+        "description": "I started my journey as a Junior Software Engineer and have since transitioned into the role of a MERN Stack Developer."
     }
 ];
 
@@ -91,6 +91,14 @@ export const project = [
         "tools": "VS Studio Code, Chrome, Mongo Shell",
         "description": "Recipe Guru is a unique website for food lovers who want to discover new recipes and easily manage their cooking ideas.",
         "viewUrl": "https://recipe-app-eight-dusky.vercel.app"
+    },
+    {
+        "name": "Real Estate Website",
+        "year": "2023",
+        "technologies": "React, Material UI, JWT Auth, node.js, Express.js, MongoDB, Redux Toolkit",
+        "tools": "VS Studio Code, Chrome, Mongo Shell",
+        "description": "Real estate website is a digital space where sellers, and buyers can get in touch to make a purchase a real estate item.",
+        "viewUrl": "https://ttb-zeta.vercel.app"
     },
     {
         "name": "Employee Management App",

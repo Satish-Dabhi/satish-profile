@@ -10,7 +10,6 @@ import Skills from './section/Skills';
 import Footer from './section/Footer';
 
 const App = () => {
-  
   return (
     <div className="App">
       <Header />

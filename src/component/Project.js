@@ -9,7 +9,7 @@ const Project = () => {
         project.length > 0 && project.map((project, index) => {
             return (
                 <div class="rows">
-                    <h1>Steps</h1>
+                    {/* <h1>Steps</h1> */}
                     <div key="{id++}" class="columns flip-card">
                         <div class="flip-card-inner">
                             <div
@@ -43,7 +43,6 @@ const Project = () => {
                                     <div style={{ backgroundColor: "black" }} >
                                         <a href={project.viewUrl} >Click To View :</a>
                                     </div>}
-
                             </div>
                         </div>
                     </div>
