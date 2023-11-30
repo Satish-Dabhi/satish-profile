@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/satish-profile/static/css/main.3d86cf49.css",
-    "main.js": "/satish-profile/static/js/main.83266488.js",
+    "main.js": "/satish-profile/static/js/main.2e2f7571.js",
     "static/media/tree.jpg": "/satish-profile/static/media/tree.8ec130e5150dd03909d0.jpg",
-    "static/media/p2.png": "/satish-profile/static/media/p2.3dbf82199b6dd661c82e.png",
-    "static/media/p5.png": "/satish-profile/static/media/p5.0106301598e734587e05.png",
-    "static/media/p3.png": "/satish-profile/static/media/p3.6405ec1d8dbb96926172.png",
-    "static/media/p4.png": "/satish-profile/static/media/p4.06344d017090b847de87.png",
+    "static/media/p3.png": "/satish-profile/static/media/p3.3dbf82199b6dd661c82e.png",
+    "static/media/p6.png": "/satish-profile/static/media/p6.0106301598e734587e05.png",
+    "static/media/p4.png": "/satish-profile/static/media/p4.6405ec1d8dbb96926172.png",
+    "static/media/p5.png": "/satish-profile/static/media/p5.06344d017090b847de87.png",
     "static/media/profile.jpg": "/satish-profile/static/media/profile.3057bd3e3a55e98147d3.jpg",
     "static/media/p1.png": "/satish-profile/static/media/p1.4e488993468f5f03a6b1.png",
     "index.html": "/satish-profile/index.html",
     "main.3d86cf49.css.map": "/satish-profile/static/css/main.3d86cf49.css.map",
-    "main.83266488.js.map": "/satish-profile/static/js/main.83266488.js.map"
+    "main.2e2f7571.js.map": "/satish-profile/static/js/main.2e2f7571.js.map"
   },
   "entrypoints": [
     "static/css/main.3d86cf49.css",
-    "static/js/main.83266488.js"
+    "static/js/main.2e2f7571.js"
   ]
 }
