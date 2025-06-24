@@ -3,6 +3,7 @@ import { PERSONAL_INFO, SOCIAL_LINKS } from "@/constants/portfolioData";
 import React, { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import logo from '@/images/satish_dabhi_logo.png';
 
 interface HeroSectionProps {
   onScrollToNext: () => void;
@@ -55,10 +56,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToNext }) => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Image */}
-          <div className="mb-8 animate-bounce-in">
+          <div className="pt-3 mb-5 animate-bounce-in">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-1 animate-pulse-glow">
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-6xl font-bold text-gradient">
-                SD
+                {/* SD */}
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="h-28 w-28 pl-2 mr-2 object-contain"
+                />
               </div>
             </div>
           </div>
@@ -81,12 +87,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToNext }) => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up"
             style={{ animationDelay: "400ms" }}
           >
-            {PERSONAL_INFO.description}
+            {PERSONAL_INFO.description.split("\n").map((line, index) => (
+              <span
+                key={index}
+                style={{ display: "block", marginBottom: "1rem" }}
+              >
+                {line}
+              </span>
+            ))}
           </p>
 
           {/* CTA Buttons */}
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up"
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-4 animate-fade-in-up"
             style={{ animationDelay: "600ms" }}
           >
             <Button

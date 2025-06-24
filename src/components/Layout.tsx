@@ -3,6 +3,7 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import logo from '@/images/satish_dabhi_logo.png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -53,7 +54,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 to="/"
                 className="text-2xl font-bold text-gradient hover:scale-105 transition-transform duration-200"
               >
-                SD
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="h-20 w-24 mr-2 object-contain"
+                />
               </Link>
             </div>
 
@@ -142,8 +147,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              © 2025 Satish Dabhi | Built with React,
-              TypeScript & Tailwind CSS.
+              © 2025 Satish Dabhi | Built with React, TypeScript & Tailwind CSS.
             </p>
           </div>
         </div>

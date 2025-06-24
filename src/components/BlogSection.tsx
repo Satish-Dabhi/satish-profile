@@ -20,8 +20,8 @@ const BlogSection: React.FC = () => {
               Latest <span className="text-gradient">Blog Posts</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Sharing knowledge and insights about web development, technology,
-              and best practices
+              Sharing knowledge and thoughts on Best practices, Technology, and
+              Web development
             </p>
           </div>
 

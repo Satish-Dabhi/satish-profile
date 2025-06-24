@@ -1,8 +1,7 @@
 export const PERSONAL_INFO = {
   name: "Satish Dabhi",
   title: "MERN Stack Developer",
-  description:
-    "Passionate MERN stack developer specializing in React.js, Next.js, Node.js, React Native, and Liferay CMS. Expert in mobile app development with Play Store and App Store deployments, plus web hosting and management.",
+  description: `Passionate and results-driven MERN Stack Developer with expertise in React.js, Next.js, Node.js, React Native, and Liferay CMS.\nSkilled in end-to-end mobile application development, including successful deployments to the Google Play Store and Apple App Store. Proficient in web hosting, deployment, and ongoing website management.\nCommitted to delivering high-quality, scalable digital solutions.`,
   location: "Gujarat, India",
   email: "satishdabhi0911@gmail.com",
   phone: "+91 91061 16932",
@@ -30,9 +29,9 @@ export const SEO_DATA = {
 
 export const ABOUT_DATA = {
   intro: [
-    "I'm Satish Dabhi, an experienced MERN stack developer with a passion for creating innovative web applications and mobile solutions. With expertise in the complete JavaScript ecosystem, I build scalable and efficient applications.",
-    "I specialize in Liferay CMS development, React Native mobile applications, and have successfully deployed multiple apps to both Play Store and App Store. I also provide comprehensive web hosting and server management services.",
-    "My goal is to deliver high-quality, user-friendly applications that meet business requirements while maintaining clean, maintainable code.",
+    "As an accomplished developer in the JavaScript ecosystem, Myself Satish Dabhi, passionate about building cutting-edge mobile and web applications. With deep experience in the MERN stack—particularly React, React Native, and Liferay frontend development — I create effective and scalable solutions that are both intuitive and maintainable.",
+    "I have developed numerous apps for the Play Store and App Store and am an expert in Liferay CMS development and React Native mobile applications. I additionally provide server administration and full-service web hosting.",
+    "Delivering top-notch, intuitive apps that satisfy business needs while keeping clean, maintainable code is my priority.",
   ],
   skills: [
     {

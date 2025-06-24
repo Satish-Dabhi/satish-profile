@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 const CustomCursor: React.FC = () => {
@@ -45,13 +44,13 @@ const CustomCursor: React.FC = () => {
   return (
     <>
       {/* Main cursor */}
-      <div
+      {/* <div
         className="cursor"
         style={{
           left: cursorPosition.x - 10,
           top: cursorPosition.y - 10,
         }}
-      />
+      /> */}
       
       {/* Cursor trails */}
       {trails.map((trail, index) => (
@@ -62,7 +61,7 @@ const CustomCursor: React.FC = () => {
             left: trail.x - 2,
             top: trail.y - 2,
             opacity: (index + 1) / trails.length * 0.6,
-            transform: `scale(${(index + 1) / trails.length})`,
+            transform: `scale(${(index + 15) / trails.length})`,
           }}
         />
       ))}
